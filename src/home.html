@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div id="topanchor"></div>
+	<nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+            	<button type="button" class="navbar-button"><i class="fa fa-bars"></i></button>
+            	</button>
+            	<a class="logo" href="#">
+            		<img alt="Brand" src="img/icons/logo.png" width="45px" height="45px">
+            	</a>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="navbar-left">
+                    <li class="active"><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="browse.html"><i class="fa fa-eye"></i> Browse</a></li>
+                    <li><a href="search.html"><i class="fa fa-search"></i> Search</a></li>
+                </ul>
+                <ul class="navbar-right">
+                    <li class="dropdown">
+                    	<a href="#" class="dropdown-button">
+                        <i class="fa fa-user-circle"></i> My account
+                    	</a>
+                    	<ul class="dropdown-menu">
+	                        <li><a href="upload.html"><i class=" fa fa-cloud-upload"></i> Upload</a></li>
+	                        <li><a href="myphoto.html"><i class="fa fa-camera"></i> Gallery</a></li>
+	                        <li><a href="mycollection.html"><i class="fa fa-star"></i> Collections</a></li>
+	                        <li><a href="../index.html"><i class="fa fa-sign-in"></i> Login</a></li>
+                    	</ul>
+                    </li>
+                </ul>
+            </div>
+         </div>
+	</nav>
+    
+    <div class="large-image">
+        <img src="img/travel-images/large-image/show.jpg">
+    </div>
+    
+    <div class="wrapper"> 
+        <div class="thumbnail">
+            <br>
+            <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/222222.jpg)"></a>
+            <h2>Title</h2>
+            <p>Welcome to my website.This is one of my photos.</p>
+        </div>
+         <div class="thumbnail">
+            <br>
+            <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/8152043422.jpg)"></a>
+            <h2>Title</h2>
+            <p>Welcome to my website.This is one of my photos.</p>
+        </div>
+         <div class="thumbnail">
+            <br>
+            <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/5855191275.jpg)"></a>
+            <h2>Title</h2>
+            <p>Welcome to my website.This is one of my photos.</p>
+        </div>
+         <div class="thumbnail">
+            <br>
+            <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/5855735700.jpg)"></a>
+            <h2>Title</h2>
+            <p>Welcome to my website.This is one of my photos.</p>
+        </div>
+         <div class="thumbnail">
+            <br>
+            <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/6119130918.jpg)"></a>
+            <h2>Title</h2>
+            <p>Welcome to my website.This is one of my photos.</p>
+        </div>
+         <div class="thumbnail">
+            <br>
+            <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+            <h2>Title</h2>
+            <p>Welcome to my website.This is one of my photos.</p>
+        </div>
+    </div>
+    
+    <div class="icon-button">
+        <a href="#topanchor">
+            <button> <i class="fa fa-angle-double-up"></i></button>
+        </a>
+
+        <a onclick="alert('图⽚已刷新')">
+            <button> <i class="fa fa-refresh"></i></button>
+        </a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-link-box">
+                <img class="QRcode" src="img/icons/QRcode.png">
+                <div class="footer-link">
+                    <ul class="footer-about">
+                        <li><a href="#">使用条款</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                    <ul>
+                        <li> Copyright © 2020 XZR.All Rights Reserved.</li>
+                        <li>备案号：沪WEB备19302010085</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+    </footer>
+    
+
+    <script type="text/javascript">
+        $(".navbar-button").click(function() {
+            $(this).toggleClass("active");
+            $(".navbar-collapse").toggleClass("active");
+        });
+    </script>
+</body>
+
+
+</html>

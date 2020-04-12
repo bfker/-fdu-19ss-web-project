@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/browse.css" rel="stylesheet">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Browse</title>
+</head>
+<body>
+    <div id="topanchor"></div>
+	<nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-button"><i class="fa fa-bars"></i></button>
+                </button>
+                <a class="logo" href="#">
+                    <img alt="Brand" src="img/icons/logo.png" width="45px" height="45px">
+                </a>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="navbar-left">
+                    <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="active"><a href="browse.html"><i class="fa fa-eye"></i> Browse</a></li>
+                    <li><a href="search.html"><i class="fa fa-search"></i> Search</a></li>
+                </ul>
+                <ul class="navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-button">
+                        <i class="fa fa-user-circle"></i> My account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="upload.html"><i class=" fa fa-cloud-upload"></i> Upload</a></li>
+                            <li><a href="myphoto.html"><i class="fa fa-camera"></i> Gallery</a></li>
+                            <li><a href="mycollection.html"><i class="fa fa-star"></i> Collections</a></li>
+                            <li><a href="../index.html"><i class="fa fa-sign-in"></i> Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+         </div>
+    </nav>
+    <div style="height: 50px"></div>
+    <div class = "wrapper">
+        <div class="flexbox-left"> 
+            <div class = "countainer">
+                <div class="sider search-bar">
+                    <div class="sider-title"> Saerch by title</div>
+                    <form>
+                        <input type="text">
+                        <button type="submit" onclick="alert('已搜索')" ><i class="fa fa-search"></i> </button>
+                    </form>
+                </div> 
+                <div class="sider">
+                    <div class="sider-title">Hot country</div>
+                    <ul>
+                        <li class="list"><a href="#">China</a></li>
+                        <li class="list"><a href="#">Japan</a></li>
+                        <li class="list"><a href="#">Italy</a></li>
+                        <li class="list"><a href="#">America</a></li>
+                    </ul>
+                </div>
+                <div class="sider">
+                    <div class="sider-title">Hot city</div>
+                    <ul>
+                        <li class="list"><a href="#">Shanghai</a></li>
+                        <li class="list"><a href="#">Tokyo</a></li>
+                        <li class="list"><a href="#">Roma</a></li>
+                        <li class="list"><a href="#">New York</a></li>
+                    </ul>
+                </div>
+                <div class="sider">
+                    <div class="sider-title">Hot Content</div>
+                    <ul>
+                        <li class="list"><a href="#">Scenery</a></li>
+                        <li class="list"><a href="#">City</a></li>
+                        <li class="list"><a href="#">People</a></li>
+                        <li class="list"><a href="#">Building</a></li>
+                        <li class="list"><a href="#">Animal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox-right"> 
+            <div class="flexboc-right-title">Filter</div>
+            <div class="selector">
+                <form>
+                    <select name="content" class="content-selector">
+                        <option value="0">Fliter by Content</option>
+                        <option value="Scenery">Scenery</option>
+                        <option value="City">City</option>
+                        <option value="People">People</option>
+                        <option value="Building">Building</option>
+                        <option value="Animal">Animal</option>
+                    </select>
+
+                    <select name="country" id="country-selector" onChange="setCity(this, this.form.city);">
+                        <option value="0">Fliter by Country</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Italy">Italy</option>
+                        <option value="America">America</option>
+                    </select>
+
+                    <select name="city" id="city-selector">
+                        <option value="Fliter by City">Fliter by City</option>
+                    </select>
+                    <input type="submit" value="Filter" name="continue">
+                </form>
+            </div>
+
+            <div class="wrapper"> 
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/222222.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/8152043422.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/5855191275.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/5855735700.jpg)"></a>
+                </div>
+                 <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/6119130918.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+                <div class="thumbnail">
+                    <a href="#" class="square" style="background-image:url(img/travel-images/normal/medium/9494470337.jpg)"></a>
+                </div>
+
+            </div>
+            <div class="page-number">< <span class="active">1</span> 2 3 4 5 6 ... 9 > </div>
+        </div>
+    </div>
+
+
+    <div class="icon-button">
+        <a href="#topanchor">
+            <button> <i class="fa fa-angle-double-up"></i></button>
+        </a>
+
+        <a onclick="alert('图⽚已刷新')">
+            <button> <i class="fa fa-refresh"></i></button>
+        </a>
+    </div>
+
+    <footer class="footer">
+        <p> Copyright © 2020 XZR.All Rights Reserved.</p>
+        <p>备案号：沪WEB备19302010085</p>
+    </footer>
+    
+    
+    <script type="text/javascript">
+        $(".navbar-button").click(function() {
+            $(this).toggleClass("active");
+            $(".navbar-collapse").toggleClass("active");
+        });
+
+        cityList = new Object();
+        cityList['China'] = new Array('Shanghai','Kunming','Beijing','Yantai');
+        cityList['Japan'] = new Array('Tokyo','Osaka','Kamakura');
+        cityList['Italy'] = new Array('Roma','Milan','Venice','Florence');
+        cityList['America'] = new Array('New York','San Francisco','Washington');
+        
+        function setCity(country, city) {
+            city.length = 1;
+            if(country.value=='0') return; 
+            for(var i=0; i<cityList[country.value].length; i++) {
+                city.options[i+1] = new Option();
+                city.options[i+1].text = cityList[country.value][i];
+                city.options[i+1].value = cityList[country.value][i];
+            }
+        }
+        
+    </script>
+</body>
+
+
+</html>

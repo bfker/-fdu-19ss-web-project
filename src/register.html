@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <div class = "wrapper">
+        <div class="sider flexbox-result"> 
+            <div class="sider-title">创建帐户</div>
+            <div><form action="#" method="GET">
+                <p>用户名</p>
+                <p><input type="text" name="text"></p>
+                <p>您当前的电子邮件地址</p>
+                <p> <input type="email" name="email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required></p>
+                <p>请设置密码</p>
+                <p> <input type="password" name="password" id="password1">
+                </p>
+                <p>请确认密码</p>
+                <p><input type="password" name="repassword" id="password1"></p>
+                <p><input type="button" value="注册" name="continue" class="button" onclick="window.location.href='../index.html';"></p>
+            </div>
+        </div>
+    </div>
+          
+
+
+    <footer class="footer">
+        <p> Copyright © 2020 XZR.All Rights Reserved.</p>
+        <p>备案号：沪WEB备19302010085</p>
+    </footer>
+    
+    
+    <script type="text/javascript">
+        $(".navbar-button").click(function() {
+            $(this).toggleClass("active");
+            $(".navbar-collapse").toggleClass("active");
+        });
+
+        cityList = new Object();
+        cityList['China'] = new Array('Shanghai','Kunming','Beijing','Yantai');
+        cityList['Japan'] = new Array('Tokyo','Osaka','Kamakura');
+        cityList['Italy'] = new Array('Roma','Milan','Venice','Florence');
+        cityList['America'] = new Array('New York','San Francisco','Washington');
+        
+        function setCity(country, city) {
+            city.length = 1;
+            if(country.value=='0') return; 
+            for(var i=0; i<cityList[country.value].length; i++) {
+                city.options[i+1] = new Option();
+                city.options[i+1].text = cityList[country.value][i];
+                city.options[i+1].value = cityList[country.value][i];
+            }
+        }
+        
+    </script>
+</body>
+
+
+</html>
